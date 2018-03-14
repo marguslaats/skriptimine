@@ -17,3 +17,17 @@ cd skriptimine
 
 d) tekita lokaalne repositoorium git süsteemi jaoks antud kaustas 
 git init
+
+e) git remoe kontroll
+git remote -v
+
+põhikasutamine: 
+
+a) pane fail jälgimisele:
+git add failinimi
+
+b) lisa kirjeldus muudatuse kohta 
+git commit -m "lühikirjelduse lause"
+
+c) lisa kaugrepositooriumi
+git push -uf skriptimine master
