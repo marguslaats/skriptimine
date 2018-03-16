@@ -2,8 +2,10 @@
 #
 #tervitusskript
 #
-echo -n "Tere, " # väljasta ilma reavahetuseta Tere,
-echo -n "Margus" # väljasta ilma reavahetuseta User
-echo "!" #väljasta ! ja tee reavahetus
+# echo "Tere User!"
+echo -n "Tere "
+echo -n `who am i | cut -c1 | tr [:lower:] [:upper:]`
+echo -n `who am i | cut -c2-`
+echo "!"
 #
-# skripti lõpp
+# skripti lopp
