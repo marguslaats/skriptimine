@@ -1,0 +1,10 @@
+#!/bin/bash 
+#
+# Väljastab minu muljed õppeaine suhtes
+#
+echo " Margus Lääts"
+echo " ISP-117"
+echo " Mulle meeldib antud õppeaine, kuna saan oskusi juurde skriptide kirjutamisest"
+echo " Minu muljed sellest õppeainest on head, sest olen saanud palju teada ning kõik on jõukohane ja huvitav."
+#
+# skripti lõpp
