@@ -1,0 +1,16 @@
+#!/bin/bash 
+#
+# kasutajate nimekiri kujul Perenimi, Eesnimi
+#
+# skripti algus
+#
+who | cut -f1 -d" " | cut -f2 -d"." > perenimi # lõikame perenime
+who | cut -f1 -d" " | cut -f1 -d"." > eesnimi # lõikame eesnime - see on 1. element ennem punkti ja salvestame faili
+paste -d"." perenimi eesnimi > nimed # kleebime need failid vastavas järjekorras kokku
+cat nimed |sort | uniq # sorteerime väljundi ja võtame korduva välja
+#
+# skripti lõpp
+echo "----------------------------------------"
+echo "awk lahendus: "
+awk -F':' '$3>999 {print $1}' /etc/passwd | column -t | grep -v nobody
+
