@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+#kellaaja väljastamine
+#
+# skripti algus
+#
+# 
+echo -n "Today is "
+echo -n `date +%A` # võtab aja ning näitab seda
+echo -n " " `date +%B`
+echo -n " " `date +%X`
+echo  " " `date +%Y`
+echo "Calendar of `date +%B" "%Y`"
+echo "$(cal)"
+#
+# skripti lõpp
