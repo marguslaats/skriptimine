@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# otsinguskript
+# see skript otsib kõik .log failid /var kaustast
+#
+echo `find /var/ -name "*.log" 2>>/dev/null -exec wc -l {} \;`
+#
+#
+# skripti lõpp
