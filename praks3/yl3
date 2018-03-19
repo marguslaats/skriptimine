@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+#Tööajaskript
+# See skript näitab kui kaua on süsteem töös olnud
+#
+#
+echo -n "$(hostname) at "
+echo `uptime | cut -f1 -d ","`
+#
+#
+# skripti lõpp
