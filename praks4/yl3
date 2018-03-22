@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+# See skript on abiks bussiekskursiooni korraldajatele
+#
+#
+echo "Sisestage palun reisjate arv grupis: "
+read reisjad_kokku
+echo "Sisestage palun reisjate arv bussis: "
+read reisjad
+echo "Sisestage palun kohtade arv bussis: "
+read kohti
+mahajaanud=`expr $reisjad_kokku \- $reisjad`
+busse=`expr $kohti \/ $reisjad`
+echo "Täidetud busse on $busse"
+echo "Mahajääjaid on $mahajaanud"
