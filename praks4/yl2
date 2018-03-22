@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+#See skript abiks kokkadele küpsisetordi valmistamiseks
+#
+#
+echo "Sisestage palun kandiku pikkus ja laius:(cm) "
+read k_pikkus k_laius
+echo "Sisestage palun küpsise pikkus ja laius:(cm) "
+read ky_pikkus ky_laius
+echo "Sisestage palun kihtide arv: "
+read kihiarv
+echo "Sisestage palun küpsiste arv pakis: "
+read pakis
+kandik=`expr $k_pikkus \* $k_laius`
+kypsis=`expr $ky_pikkus \* $ky_laius`
+kihis=`expr $kandik \/ $kypsis`
+pakke=`expr $kihiarv \* $kihis`
+pakke2=`expr $pakke \/ $pakis`
+echo "Poest tuleb osta $pakke2 pakki küpsist"
+#
+#skripti lõpp
+
