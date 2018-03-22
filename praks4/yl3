@@ -13,3 +13,6 @@ mahajaanud=`expr $reisjad_kokku \- $reisjad`
 busse=`expr $kohti \/ $reisjad`
 echo "Täidetud busse on $busse"
 echo "Mahajääjaid on $mahajaanud"
+#
+#skripti lõpp
+
