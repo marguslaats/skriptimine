@@ -1,0 +1,16 @@
+#!/bin/bash
+#
+#Reisi planeerimine
+#
+#
+echo "P 0, E 1, T 2, K 3, N 4, R 5, L 6, P 7"
+echo "Kuna plaanite ara soita?"
+read soit
+echo "mitu oopaeva olete ara?"
+read paevad
+x=$(($paevad % 7))
+tagasi=$(($soit + $x))
+echo "Tagasi jouate paeval: $tagasi"
+#
+# skripti lõpp
+
