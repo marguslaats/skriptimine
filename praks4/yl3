@@ -3,16 +3,15 @@
 # See skript on abiks bussiekskursiooni korraldajatele
 #
 #
-echo "Sisestage palun reisjate arv grupis: "
-read reisjad_kokku
-echo "Sisestage palun reisjate arv bussis: "
-read reisjad
-echo "Sisestage palun kohtade arv bussis: "
-read kohti
-mahajaanud=`expr $reisjad_kokku \- $reisjad`
-busse=`expr $kohti \/ $reisjad`
-echo "Täidetud busse on $busse"
-echo "Mahajääjaid on $mahajaanud"
-#
+read -p "Kui palju on reisjaid kokku?: " reisjad
+read -p "Kui palju on bussis kohti?: "  bussis
+xb=`expr $reisjad \/ $bussis `
+xp=`expr $xb \+ 1`
+if ((xb == 0 ))
+then
+	echo "Vaja on tellida $xb bussi "
+else
+	echo "Vaja on tellida $xp bussi "
+fi
 #skripti lõpp
 
