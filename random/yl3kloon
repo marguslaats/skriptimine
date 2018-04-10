@@ -1,0 +1,11 @@
+#!/usr/bin/python 
+#
+#
+#
+reisjad = input("Kui palju on reisjaid kokku?: ")
+bussis = input("Kui palju kohti on bussis?: ")
+xb = reisjad / bussis
+if xb == 0: 
+	print("Tellida on vaja xb bussi")
+else: 
+	print(xb+1)
