@@ -7,7 +7,7 @@ read -p "Kui palju on reisjaid kokku?: " reisjad
 read -p "Kui palju on bussis kohti?: "  bussis
 xb=`expr $reisjad \/ $bussis `
 xp=`expr $xb \+ 1`
-if ((xb == 0 ))
+if (($reisjad % $bussis == 0 ))
 then
 	echo "Vaja on tellida $xb bussi "
 else
