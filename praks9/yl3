@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+read -p "Sisesta ridade arv: " rida
+read -p "Sisesta tärnide arv: " tarn
+for((i = 1; i <= $rida; i++ ))
+do
+	echo "$i"
+if [ $i -eq 1 -o $i -eq $rida ]; then
+
+for((j = 1;j <= $tarn; j++ ))
+do
+	echo  "* "
+done
+else
+echo -n "* "
+
+for(( j = 2; j < $tarn; j++))
+do
+	echo  " "
+done
+echo -n " "
+fi
+done
