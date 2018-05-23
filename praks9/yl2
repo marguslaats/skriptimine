@@ -1,1 +1,16 @@
-
+#!/bin/bash
+#
+#Ülesanne 2
+read -p "sisesta ridade arv: " reada
+read -p "Sisesta tärnide arv reas: " tarnid
+for (( i = 1; i <= reada; i++ ))
+do
+echo "$i"
+for ((j = 1; j <= tarnid; j++ ))
+do
+echo "*"
+done
+echo ""
+done
+done
+#Skripti lõpp
